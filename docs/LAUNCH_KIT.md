@@ -1,6 +1,6 @@
 # CreativeCode Engine — Community launch kit (Phase 2)
 
-**Prepared:** 2026-11-10 · **Release:** v0.2.0 · **Status:** content ready; external community posts are NOT published by this repository.
+**Prepared:** 2026-11-10 · **Release:** v0.2.0 · **Status:** GitHub feedback issue and first DEV Community article published; Reddit and other community posts remain unposted.
 
 ## Public links
 
@@ -9,6 +9,7 @@
 - Full portfolio concept pilot: https://faysalishere.github.io/creativecode-engine/demo/portfolio/
 - Official release: https://github.com/faysalishere/creativecode-engine/releases/tag/v0.2.0
 - Community feedback: https://github.com/faysalishere/creativecode-engine/issues/1
+- Published DEV article: https://dev.to/faysalishere/i-built-an-open-source-toolkit-to-fix-repetitive-ai-generated-ui-designs-5ej5
 
 ## Positioning and truth-in-marketing
 
@@ -115,7 +116,7 @@ Only post through an account that represents the creator/project. Do not post Cr
 | Channel | Publication status | Post URL | Date | Feedback/actions |
 |---|---|---|---|---|
 | GitHub public feedback issue | Published | https://github.com/faysalishere/creativecode-engine/issues/1 | 2026-11-10 | Pending |
-| DEV Community | Draft ready, not posted | — | — | — |
+| DEV Community | Published; formatting review recommended | https://dev.to/faysalishere/i-built-an-open-source-toolkit-to-fix-repetitive-ai-generated-ui-designs-5ej5 | 2026-11-10 | Article public (HTTP 200); headings and command formatting need improvement |
 | Reddit r/SideProject | Draft ready, not posted | — | — | — |
 | Reddit r/opensource | Conditional draft, not posted | — | — | — |
 | Hacker News | Deferred | — | — | — |
