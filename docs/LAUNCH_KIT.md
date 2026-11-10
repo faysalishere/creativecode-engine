@@ -117,7 +117,7 @@ Only post through an account that represents the creator/project. Do not post Cr
 |---|---|---|---|---|
 | GitHub public feedback issue | Published | https://github.com/faysalishere/creativecode-engine/issues/1 | 2026-11-10 | Pending |
 | DEV Community | Published; formatting review recommended | https://dev.to/faysalishere/i-built-an-open-source-toolkit-to-fix-repetitive-ai-generated-ui-designs-5ej5 | 2026-11-10 | Article public (HTTP 200); headings and command formatting need improvement |
-| Reddit r/SideProject | User reports posting; external verification pending | https://www.reddit.com/r/SideProject/s/LXqd2uUHqo | 2026-11-10 (user-shared) | Share link recorded; Reddit content could not be fetched independently |
+| Reddit r/SideProject | User-shared links; external verification pending | https://www.reddit.com/r/SideProject/s/LXqd2uUHqo (first); https://www.reddit.com/r/SideProject/s/uzgNQVAsdh (second) | 2026-11-10 (user-shared) | Both short share links recorded; whether they resolve to the same post or separate posts is unverified |
 | Reddit r/opensource | Conditional draft, not posted | — | — | — |
 | Hacker News | Deferred | — | — | — |
 
