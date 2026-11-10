@@ -1,0 +1,33 @@
+name: Release after successful main tests
+on:
+  workflow_run:
+    workflows: ["Tests"]
+    types: [completed]
+permissions:
+  contents: write
+jobs:
+  publish:
+    if: >-
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.head_branch == 'main' &&
+      github.event.workflow_run.event == 'push' &&
+      github.event.workflow_run.head_repository.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Create tested release once
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TESTED_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          set -euo pipefail
+          VERSION="$(tr -d '\n\r ' < VERSION)"
+          case "$VERSION" in *[!0-9.]*|'') echo "Invalid VERSION"; exit 1;; esac
+          TAG="v$VERSION"
+          SHA="$(git rev-parse HEAD)"
+          if [ "$SHA" != "$TESTED_SHA" ]; then echo "Main moved; skip untested release"; exit 0; fi
+          if gh release view "$TAG" >/dev/null 2>&1; then echo "Already released"; exit 0; fi
+          gh release create "$TAG" --title "CreativeCode Engine $TAG" --notes-file RELEASE_NOTES.md --target "$SHA"
+          gh release view "$TAG" --json url,tagName

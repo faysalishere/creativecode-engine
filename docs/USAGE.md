@@ -1,6 +1,6 @@
 # Detailed usage guide
 
-No installation is necessary for the design workflow. The repository contains Markdown prompts you provide to your preferred AI assistant. The only executable component is the optional Python score calculator.
+No installation is necessary for the design workflow. The repository contains Markdown prompts you provide to your preferred AI assistant. There are two optional offline Python components: `python3 -m creativecode` (curated concept architecture, structural heuristic and critic packet) and `tools/score.py` (reviewer-supplied score calculator). Neither runs an AI model.
 
 ## Step 1: Write a scoped brief
 
@@ -42,6 +42,10 @@ Sample output shape:
 ## Step 5: Implementation only after selection
 
 Once a person approves one concept and the environment, use `prompts/implementation_engineer.md`. In an existing project, audit current code first and preserve approved features. Work in a safe local or staging environment. Record actual test evidence before release. Never deploy a live system based only on a score.
+
+## V1.2 CLI
+
+Run `python3 -m creativecode --help`; see [the V1.2 guide](V1_2_DESIGN_INTELLIGENCE.md) for supported briefs and limitations. Originality checks compare declared fields and are not visual tests.
 
 ## Script prerequisites
 

@@ -3,18 +3,34 @@
 **A practical creative direction and design-review toolkit for AI-assisted coding.**
 
 [![CI](https://github.com/faysalishere/creativecode-engine/actions/workflows/tests.yml/badge.svg)](https://github.com/faysalishere/creativecode-engine/actions/workflows/tests.yml)
-![Version](https://img.shields.io/badge/version-0.1.0-informational)
+![Version](https://img.shields.io/badge/version-0.2.0-informational)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-**Release: `v0.1.0` — Foundation toolkit.** No API key, server, or paid tool is required to run the included score calculator. The design workflow works with an AI assistant that can read documents and prompts; the quality of its output still requires human judgment.
+**Current version: `v0.2.0` — Design Intelligence pilot.** The free, offline Python CLI offers three curated concept architectures, declared structural difference checks and an evidence-gated critic packet. An AI assistant is optional for open-ended creative reasoning, and is not included in this repository.
 
-> **What this is:** design rules, three AI role prompts, a repeatable concept-to-review workflow, and a Python review-score validator.  
-> **What it isn't:** a trained AI model, a VS Code extension, a CLI that generates websites, an autonomous agent, or a hosted website builder.
+> **What this is:** an open-source toolkit of design principles, AI prompts, a local curated concept CLI, originality heuristics and evidence-first design reviews.  
+> **What it isn't:** a trained AI model, a VS Code extension, an autonomous website generator, a visual originality judge or a hosted product.
 
 ## Why CreativeCode?
 
 AI can produce functioning code while recycling predictable layouts: oversized hero cards, arbitrary emoji, irrelevant gradients and cosmetic-only variants. CreativeCode requires deliberate design decisions, three meaningfully different concepts and an evidence-backed critique *before* implementation. It preserves existing project decisions, and it never treats a subjective score as proof of design quality.
+
+## Three directions, not three color swaps
+
+![Concept structure diagram: editorial, dossier and chapters](assets/concept-structures.svg)
+
+These **schematic wireframes** illustrate differences in hierarchy, navigation and content organization. The repository also contains a real, local bilingual [interactive concept viewer](examples/portfolio_preview/index.html) (not a live production site).
+
+### Try the V1.2 CLI (Python 3.10+, no packages)
+
+```bash
+python3 -m creativecode concepts --brief examples/portfolio_brief.json --out concepts.json
+python3 -m creativecode originality --concepts concepts.json --out originality.json
+python3 -m creativecode critique --brief examples/portfolio_brief.json --concepts concepts.json --out critic.json
+```
+
+Supported brief types: `portfolio`, `directory`, `product`. The output describes **curated starting structures**, not novel AI-generated code. Structural checking compares declared labels—not screenshots. Details: [V1.2 guide](docs/V1_2_DESIGN_INTELLIGENCE.md).
 
 ## Quick start (5–10 minutes)
 
@@ -59,12 +75,13 @@ See [the detailed usage guide](docs/USAGE.md) and [বাংলায় শুর�
 | `prompts/creative_director.md` | Create three substantive design concepts |
 | `prompts/design_critic.md` | Challenge generic or unsupported design decisions |
 | `prompts/implementation_engineer.md` | Implement one approved concept with minimal changes |
+| `creativecode/` | Curated concept generator, structural comparison and evidence-gated critic packets |
 | `tools/score.py` | Local standard-library score calculation and hard-gate validation |
 | `tools/test_score.py` | Unit tests of valid/invalid ratings and release gates |
 | `examples/sample_brief.md` | Fictional, privacy-safe example brief |
 | `examples/three_concepts.md` | Example of three structurally different approaches |
 | `examples/sample_review.json` | Fictional scorecard input; **not** real QA evidence |
-| `docs/` | Practical usage, Bangla instructions and attribution |
+| `docs/` | V1.2 guide, practical usage, Bangla instructions, launch kit and attribution |
 
 ## Scoring principles
 
@@ -76,12 +93,13 @@ The score is a weighted sum of human/AI-supplied ratings from 0–5, normalized 
 - The Python script uses only the standard library and does not call an API or upload data.
 - A separate AI provider may have its own subscription, usage limits or data-handling policy.
 - Keep private client briefs, personal data and production secrets out of public issues and repository files. Provide AI services only the information you are permitted to share.
-- This package does not create a persistent design memory, autonomously browse or run browser QA. Those are future possibilities, not included features.
+- It does not call a model API, autonomously browse, host a demo or remember user feedback. Optional local browser QA needs Playwright/Chromium installed separately.
 
 ## Project status
 
-- **v0.1.0:** published-source-ready manual workflow, prompts, examples and validated scoring script.
-- **Future (not included):** local concept prototypes, screenshot-based QA integrations, installable agent, web platform.
+- **v0.2.0:** offline three-direction concept CLI, structural heuristics, critic packet and bilingual local concept viewer.
+- **v0.1.0:** manual prompts, design rulebook and score calculator.
+- **Not included:** autonomous AI coding agent, hosted platform or production deployment.
 
 ## Contributing and security
 
@@ -93,7 +111,7 @@ MIT licensed. See [LICENSE](LICENSE) and [docs/ATTRIBUTION.md](docs/ATTRIBUTION.
 
 ---
 
-## V1.2 — Design Intelligence pilot (`v0.2.0`)
+## V1.2 technical reference (`v0.2.0`)
 
 The latest release includes **local, deterministic** concept architecture tools. They provide three different starting structures from a JSON brief, compare declared structural differences, and prepare an evidence-based review packet. **They do not run an AI model or certify visual originality.**
 
@@ -107,3 +125,6 @@ python3 -m unittest discover -s tools -p 'test_*.py' -v
 Start with [`docs/V1_2_DESIGN_INTELLIGENCE.md`](docs/V1_2_DESIGN_INTELLIGENCE.md) for supported project types, limitations and the portfolio pilot. To inspect three actual structural mockups, open [`examples/portfolio_preview/index.html`](examples/portfolio_preview/index.html) locally. For genuine AI interpretation, use [`prompts/v1_2_creative_model.md`](prompts/v1_2_creative_model.md) in your preferred AI assistant. For an independent review, use [`prompts/v1_2_critical_review.md`](prompts/v1_2_critical_review.md).
 
 The portfolio pilot does **not** modify or deploy the live portfolio. Any implementation direction still requires user approval.
+
+
+Release details: [v0.2.0 notes](RELEASE_NOTES.md) · [Launch kit](docs/LAUNCH_KIT.md) · [Issues / feedback](https://github.com/faysalishere/creativecode-engine/issues).

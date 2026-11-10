@@ -2,6 +2,8 @@
 
 ## 0.2.0 — V1.2 Design Intelligence
 
+- Publication: corrected version references, bilingual quick-start, architecture diagram, release notes, launch kit and CI-gated GitHub Release workflow.
+
 - Added a dependency-free curated concept CLI (`python -m creativecode`) supporting portfolio, directory and product briefs.
 - Added pairwise structural originality heuristics with anti-generic signals and explicit limitations.
 - Added an evidence-gated independent critic packet generator (no fabricated visual scores).

@@ -1,6 +1,6 @@
 # CreativeCode Engine — বাংলায় ব্যবহার
 
-CreativeCode Engine v0.1.0 একটি **AI Design Workflow Toolkit**। এটি স্বয়ংক্রিয়ভাবে ওয়েবসাইট বানায় না। কোনো নতুন AI Model, API Key বা Server দরকার নেই। আপনার ব্যবহার করা AI Assistant-কে Rules ও Prompts দিতে হবে।
+CreativeCode Engine v0.2.0 একটি **AI Design Workflow Toolkit**। এটি স্বয়ংক্রিয়ভাবে ওয়েবসাইট বানায় না। কোনো নতুন AI Model, API Key বা Server দরকার নেই। আপনার ব্যবহার করা AI Assistant-কে Rules ও Prompts দিতে হবে।
 
 ## শুরু করার নিয়ম
 
@@ -24,3 +24,15 @@ python3 -m unittest discover -s tools -p 'test_*.py' -v
 এটি **রিভিউয়ের নম্বর হিসাব করে**। নিজে ডিজাইন দেখে যাচাই করে না। কোনো Test না হলে `not_tested` লিখুন। `UNVERIFIED` মানে যাচাই অসম্পূর্ণ।
 
 **সীমাবদ্ধতা:** এখানে AI Model, Browser Automation, Automatic Website Builder বা Hosting নেই। আপনার AI Assistant-এর Service খরচ আলাদা হতে পারে।
+
+## V1.2 — নতুন CLI
+
+Python 3.10+ দিয়ে Curated Concept Structure তৈরি, তাদের ঘোষিত কাঠামোগত পার্থক্য যাচাই এবং Review Packet তৈরি করা যায়। এটি নিজে AI Model চালায় না বা Website বানায় না।
+
+```bash
+python3 -m creativecode concepts --brief examples/portfolio_brief.json --out concepts.json
+python3 -m creativecode originality --concepts concepts.json --out originality.json
+python3 -m creativecode critique --brief examples/portfolio_brief.json --concepts concepts.json --out critic.json
+```
+
+`examples/portfolio_preview/index.html` Browser-এ খুলে তিনটি আলাদা Concept ও EN/বাংলা Switch দেখা যাবে। এটি Concept Demo, Live Site নয়। বিস্তারিত: [V1.2 Guide](V1_2_DESIGN_INTELLIGENCE.md)।
