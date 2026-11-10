@@ -57,5 +57,37 @@
       window.getSelection().addRange(range);
     }
   });
+  const feedbackForm = document.getElementById('feedback-form');
+  if (feedbackForm) {
+    const status = document.getElementById('feedback-status');
+    const fallback = document.getElementById('feedback-fallback');
+    const fallbackLabel = document.getElementById('feedback-fallback-label');
+    feedbackForm.addEventListener('submit', async event => {
+      event.preventDefault();
+      if (!feedbackForm.reportValidity()) return;
+      const values = new FormData(feedbackForm);
+      const report = [
+        'CreativeCode Engine v0.2.0 — two-minute demo feedback',
+        'Concept to explore: ' + values.get('direction'),
+        'Could distinguish structures: ' + values.get('clarity'),
+        'Useful or confusing: ' + (String(values.get('note') || '').trim() || 'No extra note'),
+        'Demo: https://faysalishere.github.io/creativecode-engine/'
+      ].join('\n');
+      fallback.hidden = true;
+      fallbackLabel.hidden = true;
+      try {
+        if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error('Clipboard unavailable');
+        await navigator.clipboard.writeText(report);
+        status.textContent = 'Copied. Open the GitHub feedback thread below, paste into a comment, and submit when ready.';
+      } catch {
+        fallback.value = report;
+        fallback.hidden = false;
+        fallbackLabel.hidden = false;
+        fallback.focus();
+        fallback.select();
+        status.textContent = 'Clipboard access is unavailable. Copy the selected text manually, then open the feedback thread.';
+      }
+    });
+  }
   selectConcept('editorial');
 })();

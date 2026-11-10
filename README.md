@@ -38,6 +38,12 @@ python3 -m creativecode critique --brief examples/portfolio_brief.json --concept
 
 Supported brief types: `portfolio`, `directory`, `product`. The output describes **curated starting structures**, not novel AI-generated code. Structural checking compares declared labels—not screenshots. Details: [V1.2 guide](docs/V1_2_DESIGN_INTELLIGENCE.md).
 
+## First result in about two minutes
+
+**Without installing anything:** [Try the 2-minute browser test](https://faysalishere.github.io/creativecode-engine/#quick-test). Compare three structures, select one or **Not sure**, and optionally copy feedback to [issue #1](https://github.com/faysalishere/creativecode-engine/issues/1). The demo does not collect responses.
+
+**Python 3.10+ and Git already installed?** Follow the [two-minute CLI quick start](docs/QUICK_START.md) to generate `concepts.json`. This is **curated rule-based output**, not an AI model. Our [real-user study protocol](docs/USER_TESTING.md) tracks meaningful attempts rather than stars.
+
 ## Quick start (5–10 minutes)
 
 **1. Get the project.** On GitHub, choose **Code → Download ZIP**, or clone it:

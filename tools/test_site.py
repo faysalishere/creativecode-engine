@@ -82,3 +82,30 @@ class DemoSiteTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+class FirstUseFlowTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.html = (DOCS / 'index.html').read_text(encoding='utf-8')
+        cls.js = (DOCS / 'assets/site.js').read_text(encoding='utf-8')
+
+    def test_quickstart_and_testing_protocol_exist(self):
+        for path in ('QUICK_START.md', 'USER_TESTING.md'):
+            content = (DOCS / path).read_text(encoding='utf-8')
+            self.assertIn('https://github.com/faysalishere/creativecode-engine/issues/1', content)
+
+    def test_guided_test_controls_exist(self):
+        self.assertIn('href="#quick-test"', self.html)
+        for name in ('quick-test','feedback-form','feedback-clarity','feedback-note','feedback-status','feedback-fallback'):
+            self.assertIn('id="' + name + '"', self.html)
+
+    def test_can_express_uncertainty_without_data_submission(self):
+        self.assertIn('value="Not sure"', self.html)
+        self.assertIn('name="clarity" required', self.html)
+        self.assertIn('maxlength="500"', self.html)
+        self.assertIn('event.preventDefault()', self.js)
+
+    def test_copy_and_fallback_code_present(self):
+        self.assertIn('navigator.clipboard.writeText(report)', self.js)
+        self.assertIn('fallback.select()', self.js)
+        self.assertNotIn('fetch(', self.js)

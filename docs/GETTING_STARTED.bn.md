@@ -2,6 +2,8 @@
 
 CreativeCode Engine v0.2.0 একটি **AI Design Workflow Toolkit**। এটি স্বয়ংক্রিয়ভাবে ওয়েবসাইট বানায় না। কোনো নতুন AI Model, API Key বা Server দরকার নেই। আপনার ব্যবহার করা AI Assistant-কে Rules ও Prompts দিতে হবে।
 
+**নতুন ব্যবহারকারী:** [২ মিনিটে Browser Test](https://faysalishere.github.io/creativecode-engine/#quick-test) অথবা [English CLI Quick Start](QUICK_START.md)। Browser Test-এ Python বা Login প্রয়োজন নেই; GitHub Issue-তে মন্তব্য করতে Login লাগবে।
+
 ## শুরু করার নিয়ম
 
 1. GitHub থেকে Repository Download করুন অথবা `git clone` করুন।
