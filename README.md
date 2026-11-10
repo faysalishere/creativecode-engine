@@ -99,7 +99,7 @@ The score is a weighted sum of human/AI-supplied ratings from 0–5, normalized 
 - The Python script uses only the standard library and does not call an API or upload data.
 - A separate AI provider may have its own subscription, usage limits or data-handling policy.
 - Keep private client briefs, personal data and production secrets out of public issues and repository files. Provide AI services only the information you are permitted to share.
-- It does not call a model API, autonomously browse, host a demo or remember user feedback. Optional local browser QA needs Playwright/Chromium installed separately.
+- The Python engine does not call a model API, autonomously browse, or host a model-powered demo; the separate GitHub Pages site hosts a static design study. Optional local browser QA needs Playwright/Chromium installed separately.
 
 ## Project status
 
@@ -133,4 +133,4 @@ Start with [`docs/V1_2_DESIGN_INTELLIGENCE.md`](docs/V1_2_DESIGN_INTELLIGENCE.md
 The portfolio pilot does **not** modify or deploy the live portfolio. Any implementation direction still requires user approval.
 
 
-Release details: [v0.2.0 notes](RELEASE_NOTES.md) · [Launch kit](docs/LAUNCH_KIT.md) · [Issues / feedback](https://github.com/faysalishere/creativecode-engine/issues).
+Release details: [v0.2.0 notes](RELEASE_NOTES.md) · [Community launch kit](docs/LAUNCH_KIT.md) · [Give focused feedback](https://github.com/faysalishere/creativecode-engine/issues/1) · [All issues](https://github.com/faysalishere/creativecode-engine/issues).
