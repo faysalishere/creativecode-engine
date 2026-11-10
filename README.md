@@ -90,3 +90,20 @@ Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for scope and 
 ## License and credits
 
 MIT licensed. See [LICENSE](LICENSE) and [docs/ATTRIBUTION.md](docs/ATTRIBUTION.md). Upstream design references are acknowledged but are **not** distributed as part of this repository.
+
+---
+
+## V1.2 — Design Intelligence pilot (`v0.2.0`)
+
+The latest release includes **local, deterministic** concept architecture tools. They provide three different starting structures from a JSON brief, compare declared structural differences, and prepare an evidence-based review packet. **They do not run an AI model or certify visual originality.**
+
+```bash
+python3 -m creativecode concepts --brief examples/portfolio_brief.json --out examples/portfolio_concepts.json
+python3 -m creativecode originality --concepts examples/portfolio_concepts.json --out examples/portfolio_originality.json
+python3 -m creativecode critique --brief examples/portfolio_brief.json --concepts examples/portfolio_concepts.json --out examples/portfolio_critic_packet.json
+python3 -m unittest discover -s tools -p 'test_*.py' -v
+```
+
+Start with [`docs/V1_2_DESIGN_INTELLIGENCE.md`](docs/V1_2_DESIGN_INTELLIGENCE.md) for supported project types, limitations and the portfolio pilot. To inspect three actual structural mockups, open [`examples/portfolio_preview/index.html`](examples/portfolio_preview/index.html) locally. For genuine AI interpretation, use [`prompts/v1_2_creative_model.md`](prompts/v1_2_creative_model.md) in your preferred AI assistant. For an independent review, use [`prompts/v1_2_critical_review.md`](prompts/v1_2_critical_review.md).
+
+The portfolio pilot does **not** modify or deploy the live portfolio. Any implementation direction still requires user approval.

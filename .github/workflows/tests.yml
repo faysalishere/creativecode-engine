@@ -22,8 +22,13 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Check Python files
-        run: python -m compileall -q tools
+        run: python -m compileall -q tools creativecode
       - name: Unit tests
         run: python -m unittest discover -s tools -p 'test_*.py' -v
       - name: Run documented sample
         run: python tools/score.py examples/sample_review.json
+      - name: Generate and validate portfolio pilot
+        run: |
+          python -m creativecode concepts --brief examples/portfolio_brief.json --out /tmp/creativecode-pilot-concepts.json
+          python -m creativecode originality --concepts /tmp/creativecode-pilot-concepts.json --out /tmp/creativecode-pilot-originality.json
+          python -m creativecode critique --brief examples/portfolio_brief.json --concepts /tmp/creativecode-pilot-concepts.json --out /tmp/creativecode-pilot-critic.json

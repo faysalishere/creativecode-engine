@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.2",
+  "project_id": "pilot-personal-portfolio-2026",
+  "project_name": "MD Faysal Ahmed — Cinematic Portfolio",
+  "project_type": "portfolio",
+  "generator": "curated-architecture-library-no-llm",
+  "disclaimer": "These are structured starting points, NOT original AI art, verified UX findings or shipped designs.",
+  "concepts": [
+    {
+      "id": "A",
+      "name": "Editorial flagship",
+      "thesis": "Introduce the creator through an editorial identity and establish credibility with long-form project stories.",
+      "hero_structure": "asymmetric_portrait_identity",
+      "information_architecture": "identity_then_sequential_work_stories",
+      "navigation_model": "compact_top_anchor_navigation",
+      "content_presentation": "full_width_case_study_sections",
+      "interaction_model": "scroll_driven_story_reveal",
+      "desktop_wireframe": [
+        "Identity copy + authentic portrait in asymmetric frame",
+        "Featured work as expansive editorial case studies",
+        "Expertise, philosophy and contact in distinct reading zones"
+      ],
+      "mobile_wireframe": [
+        "Identity first; portrait placed below introduction",
+        "One immersive project story per section",
+        "Compact accessible section navigation and direct contact"
+      ],
+      "tradeoff": "Strong narrative, but lengthy pages require careful navigation and performance testing.",
+      "risk": "Long-form reading may slow visitors looking for a specific project.",
+      "effort": "medium",
+      "primary_action": "Explore selected work",
+      "featured_content_in_source_order": [
+        "SellDibo",
+        "DoharNawabganj",
+        "Nishabdo",
+        "DN Connect",
+        "Bangladesh Number Plate Maker"
+      ],
+      "project_constraints": {
+        "pilot_only": true,
+        "live_deployment_authorized": false,
+        "existing_portfolio_design_must_remain_unchanged": true,
+        "approved_visual_language": "near-black editorial interface, crimson accents, refined asymmetry, controlled motion",
+        "approved_languages": "English by default, Bangla selectable",
+        "approved_identity": "MD Faysal Ahmed — Digital Creator | Founder | Web & App Developer",
+        "preserve_featured_work_order": true,
+        "only_verified_real_assets": true,
+        "audio": "opt-in only when implemented, never autoplay",
+        "no_duplicated_code_or_paid_tools": true
+      },
+      "audience": [
+        "Visitors evaluating the creator's real projects and responsibilities",
+        "Potential collaborators looking for proof of practical web and app work"
+      ],
+      "project_goal": "Present authentic work clearly with a cinematic editorial identity without obscuring project discovery.",
+      "asset_policy": "Use only verified project assets; identify missing assets, never fabricate live screenshots, logos, or personal facts.",
+      "scope": "Concept-only exploration; no production changes or implementation approval."
+    },
+    {
+      "id": "B",
+      "name": "Project dossier",
+      "thesis": "Make completed work the primary proof, with clear project context and scannable project records.",
+      "hero_structure": "compact_identity_and_active_dossier",
+      "information_architecture": "project_index_then_deep_dossiers",
+      "navigation_model": "persistent_numbered_project_rail",
+      "content_presentation": "selectable_project_dossier_panels",
+      "interaction_model": "project_selection_updates_detail_pane",
+      "desktop_wireframe": [
+        "Compact creator header above selected project",
+        "Numbered project rail beside detailed project dossier",
+        "Skills and contact in a quiet lower information strip"
+      ],
+      "mobile_wireframe": [
+        "Concise creator header with work-first CTA",
+        "Accessible expandable project dossiers in source order",
+        "Expertise and contact under project index"
+      ],
+      "tradeoff": "Fast work discovery, but selected-panel behavior needs keyboard and deep-link support.",
+      "risk": "Tab-like interactions may hide details from search engines or keyboard users if implemented poorly.",
+      "effort": "medium",
+      "primary_action": "Explore selected work",
+      "featured_content_in_source_order": [
+        "SellDibo",
+        "DoharNawabganj",
+        "Nishabdo",
+        "DN Connect",
+        "Bangladesh Number Plate Maker"
+      ],
+      "project_constraints": {
+        "pilot_only": true,
+        "live_deployment_authorized": false,
+        "existing_portfolio_design_must_remain_unchanged": true,
+        "approved_visual_language": "near-black editorial interface, crimson accents, refined asymmetry, controlled motion",
+        "approved_languages": "English by default, Bangla selectable",
+        "approved_identity": "MD Faysal Ahmed — Digital Creator | Founder | Web & App Developer",
+        "preserve_featured_work_order": true,
+        "only_verified_real_assets": true,
+        "audio": "opt-in only when implemented, never autoplay",
+        "no_duplicated_code_or_paid_tools": true
+      },
+      "audience": [
+        "Visitors evaluating the creator's real projects and responsibilities",
+        "Potential collaborators looking for proof of practical web and app work"
+      ],
+      "project_goal": "Present authentic work clearly with a cinematic editorial identity without obscuring project discovery.",
+      "asset_policy": "Use only verified project assets; identify missing assets, never fabricate live screenshots, logos, or personal facts.",
+      "scope": "Concept-only exploration; no production changes or implementation approval."
+    },
+    {
+      "id": "C",
+      "name": "Cinematic chapters",
+      "thesis": "Use distinct narrative chapters to connect the creator's philosophy with selected work without repeating a card grid.",
+      "hero_structure": "typographic_manifesto_and_chapter_index",
+      "information_architecture": "identity_then_thematic_chapters",
+      "navigation_model": "chapter_index_with_skip_links",
+      "content_presentation": "chapter_headlines_and_ordered_work_index",
+      "interaction_model": "chapter_navigation_and_controlled_reveal",
+      "desktop_wireframe": [
+        "Full-height manifesto with explicit chapter index",
+        "Thematic storytelling chapters with project index",
+        "Closing invitation with clear contact action"
+      ],
+      "mobile_wireframe": [
+        "Readable manifesto with visible jump-to-work control",
+        "Stacked chapters and numbered project links",
+        "No scroll hijacking; reduced-motion alternative"
+      ],
+      "tradeoff": "Memorable storytelling, but motion must never obstruct direct access to work.",
+      "risk": "Animation-heavy layouts can impair readability, low-power performance and motion sensitivity.",
+      "effort": "high",
+      "primary_action": "Explore selected work",
+      "featured_content_in_source_order": [
+        "SellDibo",
+        "DoharNawabganj",
+        "Nishabdo",
+        "DN Connect",
+        "Bangladesh Number Plate Maker"
+      ],
+      "project_constraints": {
+        "pilot_only": true,
+        "live_deployment_authorized": false,
+        "existing_portfolio_design_must_remain_unchanged": true,
+        "approved_visual_language": "near-black editorial interface, crimson accents, refined asymmetry, controlled motion",
+        "approved_languages": "English by default, Bangla selectable",
+        "approved_identity": "MD Faysal Ahmed — Digital Creator | Founder | Web & App Developer",
+        "preserve_featured_work_order": true,
+        "only_verified_real_assets": true,
+        "audio": "opt-in only when implemented, never autoplay",
+        "no_duplicated_code_or_paid_tools": true
+      },
+      "audience": [
+        "Visitors evaluating the creator's real projects and responsibilities",
+        "Potential collaborators looking for proof of practical web and app work"
+      ],
+      "project_goal": "Present authentic work clearly with a cinematic editorial identity without obscuring project discovery.",
+      "asset_policy": "Use only verified project assets; identify missing assets, never fabricate live screenshots, logos, or personal facts.",
+      "scope": "Concept-only exploration; no production changes or implementation approval."
+    }
+  ]
+}

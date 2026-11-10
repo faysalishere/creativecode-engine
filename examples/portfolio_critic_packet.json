@@ -1,0 +1,89 @@
+{
+  "project_id": "pilot-personal-portfolio-2026",
+  "stage": "concept_only",
+  "status": "UNVERIFIED_REQUIRES_HUMAN_REVIEW",
+  "structural_gate": "pass",
+  "structural_evidence": [
+    {
+      "left": "A",
+      "right": "B",
+      "different_dimensions": [
+        "hero_structure",
+        "information_architecture",
+        "navigation_model",
+        "content_presentation",
+        "interaction_model"
+      ],
+      "different_dimension_count": 5,
+      "passes_structural_distinction": true
+    },
+    {
+      "left": "A",
+      "right": "C",
+      "different_dimensions": [
+        "hero_structure",
+        "information_architecture",
+        "navigation_model",
+        "content_presentation",
+        "interaction_model"
+      ],
+      "different_dimension_count": 5,
+      "passes_structural_distinction": true
+    },
+    {
+      "left": "B",
+      "right": "C",
+      "different_dimensions": [
+        "hero_structure",
+        "information_architecture",
+        "navigation_model",
+        "content_presentation",
+        "interaction_model"
+      ],
+      "different_dimension_count": 5,
+      "passes_structural_distinction": true
+    }
+  ],
+  "review_criteria": [
+    "originality",
+    "strategy",
+    "hierarchy",
+    "typography",
+    "composition",
+    "usability",
+    "responsive",
+    "motion",
+    "engineering"
+  ],
+  "ratings": {
+    "originality": null,
+    "strategy": null,
+    "hierarchy": null,
+    "typography": null,
+    "composition": null,
+    "usability": null,
+    "responsive": null,
+    "motion": null,
+    "engineering": null
+  },
+  "hard_gates": {
+    "scope_preserved": "not_tested",
+    "truthful_assets": "not_tested",
+    "accessibility_baseline": "not_tested",
+    "functional_integrity": "not_tested",
+    "structural_distinction": "pass",
+    "evidence_integrity": "not_tested"
+  },
+  "known_concerns": [
+    "A: Long-form reading may slow visitors looking for a specific project.",
+    "B: Tab-like interactions may hide details from search engines or keyboard users if implemented poorly.",
+    "C: Animation-heavy layouts can impair readability, low-power performance and motion sensitivity."
+  ],
+  "required_evidence": [
+    "Validate all concept descriptions against the approved scope and verified assets.",
+    "Human review of actual mobile and desktop compositions, not only structure tags.",
+    "Keyboard, touch and reduced-motion testing if any concept is implemented.",
+    "Independent reviewer ratings with concrete evidence before running tools/score.py."
+  ],
+  "disclaimer": "This automated packet is NOT an AI visual critic; it only checks structured inputs and prepares prompts for human or external-model review."
+}

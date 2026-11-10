@@ -1,0 +1,50 @@
+{
+  "project_id": "pilot-personal-portfolio-2026",
+  "method": "declared-structure-heuristic",
+  "not_a_proof_of_originality": true,
+  "pairwise": [
+    {
+      "left": "A",
+      "right": "B",
+      "different_dimensions": [
+        "hero_structure",
+        "information_architecture",
+        "navigation_model",
+        "content_presentation",
+        "interaction_model"
+      ],
+      "different_dimension_count": 5,
+      "passes_structural_distinction": true
+    },
+    {
+      "left": "A",
+      "right": "C",
+      "different_dimensions": [
+        "hero_structure",
+        "information_architecture",
+        "navigation_model",
+        "content_presentation",
+        "interaction_model"
+      ],
+      "different_dimension_count": 5,
+      "passes_structural_distinction": true
+    },
+    {
+      "left": "B",
+      "right": "C",
+      "different_dimensions": [
+        "hero_structure",
+        "information_architecture",
+        "navigation_model",
+        "content_presentation",
+        "interaction_model"
+      ],
+      "different_dimension_count": 5,
+      "passes_structural_distinction": true
+    }
+  ],
+  "generic_pattern_warnings": [],
+  "structural_gate": "pass",
+  "required_different_dimensions": 3,
+  "note": "Compares declared architecture labels, not screenshots or internet-wide designs. Human visual review remains required."
+}

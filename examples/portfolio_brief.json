@@ -1,0 +1,30 @@
+{
+  "project_id": "pilot-personal-portfolio-2026",
+  "project_type": "portfolio",
+  "project_name": "MD Faysal Ahmed — Cinematic Portfolio",
+  "audience": [
+    "Visitors evaluating the creator's real projects and responsibilities",
+    "Potential collaborators looking for proof of practical web and app work"
+  ],
+  "primary_goal": "Present authentic work clearly with a cinematic editorial identity without obscuring project discovery.",
+  "primary_action": "Explore selected work",
+  "constraints": {
+    "pilot_only": true,
+    "live_deployment_authorized": false,
+    "existing_portfolio_design_must_remain_unchanged": true,
+    "approved_visual_language": "near-black editorial interface, crimson accents, refined asymmetry, controlled motion",
+    "approved_languages": "English by default, Bangla selectable",
+    "approved_identity": "MD Faysal Ahmed — Digital Creator | Founder | Web & App Developer",
+    "preserve_featured_work_order": true,
+    "only_verified_real_assets": true,
+    "audio": "opt-in only when implemented, never autoplay",
+    "no_duplicated_code_or_paid_tools": true
+  },
+  "content_items": [
+    {"title": "SellDibo", "type": "live_project", "verified_role": "Founder & Project Director"},
+    {"title": "DoharNawabganj", "type": "live_project", "verified_role": "Founder & Creator"},
+    {"title": "Nishabdo", "type": "website_project", "verified_role": "Website Creator & Developer"},
+    {"title": "DN Connect", "type": "in_development", "verified_role": "In Development"},
+    {"title": "Bangladesh Number Plate Maker", "type": "live_project", "verified_role": "Not independently established for this pilot"}
+  ]
+}
