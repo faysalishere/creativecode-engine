@@ -1,36 +1,129 @@
-# CreativeCode Engine — launch kit
+# CreativeCode Engine — Community launch kit (Phase 2)
 
-Public repo: https://github.com/faysalishere/creativecode-engine · Current version: **v0.2.0**
+**Prepared:** 2026-11-10 · **Release:** v0.2.0 · **Status:** content ready; external community posts are NOT published by this repository.
 
-## Accurate pitch
-An offline design-direction CLI and prompt workflow for developers who want structurally different UI ideas, not just color-swapped templates.
+## Public links
 
-**Who:** independent developers, design-minded engineers and users of general-purpose AI coding assistants.
+- Repository: https://github.com/faysalishere/creativecode-engine
+- Live interactive design study: https://faysalishere.github.io/creativecode-engine/
+- Full portfolio concept pilot: https://faysalishere.github.io/creativecode-engine/demo/portfolio/
+- Official release: https://github.com/faysalishere/creativecode-engine/releases/tag/v0.2.0
+- Community feedback: https://github.com/faysalishere/creativecode-engine/issues/1
 
-**Works today:** three curated concept starting structures for portfolio/directory/product briefs, structural-difference heuristic, evidence-gated reviewer packet, local bilingual interactive concept viewer.
+## Positioning and truth-in-marketing
 
-**Not included:** an AI model, autonomous website builder, pixel originality scoring, live demo hosting or deployment. Don't imply these exist.
+**For:** independent developers, people learning AI-assisted coding, UI designers who want meaningful layout alternatives.
 
-## Recommended GitHub topics
+**One sentence:** CreativeCode Engine is an open-source, offline Python design-direction toolkit and prompt workflow that helps users challenge repetitive UI concepts before writing code.
 
-`developer-tools`, `design-systems`, `ui-ux`, `python`, `ai-assisted-development`, `design-review`, `prompt-engineering`, `open-source`
+**What works today:** three *curated* concept architectures for portfolio/directory/product briefs; declared-structure originality heuristics; an evidence-gated reviewer packet; design prompts; a static interactive concept demo; English/Bangla in the portfolio pilot.
 
-## Launch checklist
+**What it is NOT:** a trained AI model, autonomous coding agent, screenshot-based originality detector, production website generator, or a hosted API. The GitHub Pages **demo exists** but does not run the Python CLI in the browser.
 
-1. Verify the latest GitHub Actions **Tests** passed on `main`.
-2. Confirm the official `v0.2.0` Release exists and points to the tested commit.
-3. Check README, version, license, public preview file and links.
-4. Add appropriate Topics under **Repository → About → Edit** if not already set.
-5. Leave Homepage blank until a real hosted demo exists.
-6. Demonstrate commands and the concept viewer; share only in developer communities permitting self-promotion.
-7. Record genuine feedback and dated 7/30-day metrics without inventing adoption numbers.
+Use the actual v0.2.0 release URL; do not imply third-party adoption, star counts, performance metrics or real-user validation.
 
-## Demo storyboard (not recorded)
+## Channel A — DEV Community technical article (ready to edit and post)
 
-Show the CLI `concepts` output; run `originality`; open the local HTML viewer and switch A/B/C + English/বাংলা; disclose that the CLI is curated and users bring their own AI assistant.
+Suggested tags: python, opensource, webdev, discuss. Follow DEV's current guidelines and keep the discussion technical.
 
-## Developer announcement draft (not posted)
+### Title: I built an offline toolkit to challenge repetitive AI-generated UI ideas
 
-**Title:** I built an open-source toolkit for design directions beyond AI color swaps
+When I ask an AI coding assistant for a new UI, I often get a familiar composition: a large headline, a few equal cards, rounded buttons and a different gradient. The code may work, but a color change is not a new design direction.
 
-CreativeCode Engine v0.2.0 is a dependency-free Python CLI and AI prompt workflow for exploring different layout, information architecture and interaction models before coding. It produces three curated starting structures, a structural comparison and an evidence-gated review packet, with an interactive bilingual portfolio concept demo. It isn't an LLM or a hosted site builder. Feedback on the heuristic and useful future patterns is welcome: https://github.com/faysalishere/creativecode-engine
+I built **CreativeCode Engine**, a small open-source toolkit for deciding *what to design* before asking an assistant to implement it.
+
+### What it currently does
+
+1. Generates three **curated structural starting points** for portfolio, directory or product briefs. These are rule-based configurations, not an LLM inventing new designs.
+2. Compares declared composition/navigation/content dimensions to flag superficial alternatives. It does not inspect screenshots.
+3. Builds a design-critic packet with evidence gates, so untested behavior is explicitly marked as unverified.
+4. Includes prompts and a bilingual interactive portfolio concept demo.
+
+### Try it locally
+
+Python 3.10+ is sufficient; no pip packages or API key are needed for the core CLI:
+
+~~~bash
+git clone https://github.com/faysalishere/creativecode-engine.git
+cd creativecode-engine
+python3 -m creativecode concepts --brief examples/portfolio_brief.json --out concepts.json
+python3 -m creativecode originality --concepts concepts.json --out originality.json
+python3 -m creativecode critique --brief examples/portfolio_brief.json --concepts concepts.json --out critic.json
+~~~
+
+There's also a browser-based design study you can explore without installing anything:
+
+https://faysalishere.github.io/creativecode-engine/
+
+### The question I'm testing
+
+Can a repeatable workflow make AI-assisted design exploration less generic **without pretending that a heuristic can judge aesthetics**? My current approach separates concept generation from adversarial review, then asks a person to approve the direction.
+
+**Limitations:** current concept patterns are curated, similarity is based on declared fields, and there's no built-in generative model or autonomous website builder. This is an early developer toolkit, not a finished end-to-end product.
+
+I'd value technical feedback on the structural originality heuristic, CLI ergonomics and which concept comparisons would help in a real workflow.
+
+**Source:** https://github.com/faysalishere/creativecode-engine
+
+**Focused feedback issue:** https://github.com/faysalishere/creativecode-engine/issues/1
+
+## Channel B — Reddit r/SideProject (adapt to live rules before posting)
+
+**Title:** Built an offline toolkit for exploring different UI structures before AI coding — looking for feedback
+
+**Body:**
+
+I've been experimenting with a small open-source toolkit called CreativeCode Engine. The problem I'm trying to address is AI-generated UI concepts that look different only because the colors changed.
+
+It has a Python 3.10+ offline CLI for three curated concept starting structures, declared-structure similarity checks and an evidence-gated review packet. There is also a free static interactive portfolio study: https://faysalishere.github.io/creativecode-engine/
+
+It's early: no built-in LLM, no automatic website builder and no screenshot originality judging. Source: https://github.com/faysalishere/creativecode-engine
+
+If you use AI to build interfaces, what is the bigger obstacle: repetitive layouts, missing design rationale, or weak review/testing? I'm especially interested in false positives in the originality checks.
+
+**Posting policy:** Share once only if current subreddit rules allow project promotion; disclose that you built it, and participate genuinely in replies. No upvote requests, duplicate blasts or bot submissions.
+
+## Channel C — Reddit r/opensource (conditional)
+
+Read https://www.reddit.com/r/opensource/about/rules before posting. If permitted, choose the appropriate self-promotion flair and focus on the MIT license, dependency-free architecture and specific contribution requests. Do not copy the same Reddit post unchanged across communities.
+
+**Title:** CreativeCode Engine: MIT-licensed design-direction toolkit (Python, no API key)
+
+**Body:** I released a small MIT-licensed Python toolkit to explore multiple UI structures before implementing AI-assisted code. The CLI uses curated concept structures and transparent heuristics; it is not a generative model. There's a public demo and documented reviewer packet. I'd appreciate feedback on the originality rules and potential contributor-friendly tests. Repo: https://github.com/faysalishere/creativecode-engine | Demo: https://faysalishere.github.io/creativecode-engine/
+
+## Hacker News / Show HN — hold for now
+
+Official guidelines: https://news.ycombinator.com/showhn.html. Show HN expects non-trivial work that people can try, not a marketing landing page or quickly assembled demo. Re-evaluate after external developer testing improves the CLI and a real use case demonstrates value. Do not post a premature Show HN or ask for upvotes.
+
+## Optional short personal social post
+
+I built CreativeCode Engine, an open-source experiment in better AI-assisted UI decisions. Instead of presenting three color swaps as three concepts, it explores structural alternatives and makes missing evidence explicit. Offline Python CLI + interactive browser demo. Repo: https://github.com/faysalishere/creativecode-engine · Demo: https://faysalishere.github.io/creativecode-engine/ . Feedback welcome.
+
+Only post through an account that represents the creator/project. Do not post CreativeCode content to an unrelated connected music/brand channel.
+
+## Launch procedure
+
+1. Open both live demo URLs and verify functionality in a fresh browser.
+2. Publish the DEV article **once** from a DEV account owned by the creator; no DEV account is connected to this workflow.
+3. Share an adapted Reddit feedback post **only after** reading the current community rules; avoid cross-posting everywhere at once.
+4. Respond to comments and genuine bug reports. Keep criticism visible.
+5. Record public post URLs and dates here after posting, rather than treating drafts as published.
+6. Compare genuine 7-day and 30-day metrics (GitHub traffic unique visitors/clones if available, referral URLs, stars, forks, new issues, actual users reporting successful CLI runs). Never invent numbers.
+
+### Tracking ledger
+
+| Channel | Publication status | Post URL | Date | Feedback/actions |
+|---|---|---|---|---|
+| GitHub public feedback issue | Published | https://github.com/faysalishere/creativecode-engine/issues/1 | 2026-11-10 | Pending |
+| DEV Community | Draft ready, not posted | — | — | — |
+| Reddit r/SideProject | Draft ready, not posted | — | — | — |
+| Reddit r/opensource | Conditional draft, not posted | — | — | — |
+| Hacker News | Deferred | — | — | — |
+
+### Baseline
+
+Capture GitHub Insights → Traffic and repository statistics on the day of first external post. This repository's public star/fork numbers and traffic can change; no numeric baseline is claimed in this document.
+
+## Maintenance
+
+Keep outreach accurate when the product changes. Do not impersonate independent reviewers, buy engagement, ask for upvotes or claim a live CLI hosted on GitHub Pages.
