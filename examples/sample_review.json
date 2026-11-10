@@ -1,0 +1,25 @@
+{
+  "project": "fictional-demo-only",
+  "stage": "concept",
+  "reviewer": "example data; NOT a real audit",
+  "evidence": ["This file is a demonstration of the scoring tool, not an assessed design."],
+  "ratings": {
+    "originality": 4,
+    "strategy": 4,
+    "hierarchy": 4,
+    "typography": 4,
+    "composition": 4,
+    "usability": 4,
+    "responsive": 3,
+    "motion": 4,
+    "engineering": 3
+  },
+  "gates": {
+    "scope_preserved": "pass",
+    "truthful_assets": "pass",
+    "accessibility_baseline": "not_tested",
+    "functional_integrity": "not_tested",
+    "structural_distinction": "pass",
+    "evidence_integrity": "pass"
+  }
+}
