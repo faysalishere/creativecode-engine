@@ -12,6 +12,12 @@
 > **What this is:** an open-source toolkit of design principles, AI prompts, a local curated concept CLI, originality heuristics and evidence-first design reviews.  
 > **What it isn't:** a trained AI model, a VS Code extension, an autonomous website generator, a visual originality judge or a hosted product.
 
+## Live interactive demo
+
+**Explore:** [CreativeCode Engine design study](https://faysalishere.github.io/creativecode-engine/) · [Open the full three-direction portfolio pilot](https://faysalishere.github.io/creativecode-engine/demo/portfolio/)
+
+The static, dependency-free GitHub Pages demo lets you compare structural design directions and try the existing bilingual portfolio study. It is **a concept demonstration, not a hosted AI generator**. If Pages has not yet been enabled, the repository owner can follow [the one-time deployment instructions](docs/GITHUB_PAGES.md).
+
 ## Why CreativeCode?
 
 AI can produce functioning code while recycling predictable layouts: oversized hero cards, arbitrary emoji, irrelevant gradients and cosmetic-only variants. CreativeCode requires deliberate design decisions, three meaningfully different concepts and an evidence-backed critique *before* implementation. It preserves existing project decisions, and it never treats a subjective score as proof of design quality.
